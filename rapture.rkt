@@ -31,8 +31,6 @@
      (display (format "~a, ~v" tape head))]
     [else
      (displayln (format "~a, ~v" tape head))
-     ;(print head)
-     ;(displayln "")
      (run-turing-machine
       tape
       (apply-transition tape head turing-machine)
